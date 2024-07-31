@@ -1,0 +1,15 @@
+<%-include("partials/header")%>
+<%console.log(blogs_list.size)%>
+<%for(const [i,k] of blogs_list){
+    for(const [j,l] of k){%>
+        <div class="blogs">
+            <div class="top">
+                <h1 class="topic"> <%=i%> </h1>
+                <div class="author"> <%=by%> <%=j%>  </div> 
+            </div>
+            <hr>
+            <p class="b_body"> <%=l%></p>
+        </div> 
+        <br><br>
+    <%}
+}%>

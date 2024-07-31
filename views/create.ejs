@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+<%if(locals.te_xt){%>
+    <p><%= te_xt %></p>
+    <%}%>
+<div class="blogs" style="margin-bottom: 2%;">
+<form action="/create/submit" method="post">
+    <div class="topic">
+    <input type="text" class="Topic c_topic" name="heading" placeholder="Topic........" autocapitalize="words"  required>
+    <br>
+    <div style="text-align: right;">
+    <input type="text" class="author c_author" name="author" placeholder="Author........" autocapitalize="words"  required >
+    <br>
+    </div>
+    </div>
+    <hr>
+    <textarea name="b_body" class="b_body cb_body" rows="7" cols="125" placeholder="Body......." autocapitalize="on" required></textarea>
+    <br>
+    <div style="text-align: right;">
+    <input type="submit" style="margin-right: 1%; margin-top: 1%;border:none;border-radius: 5%;">
+    </div>
+</form> 
+</div>
